@@ -66,7 +66,7 @@ export default function ChatComponent({userToken, receiverId}:{userToken:string,
       }
     };
     // Conectar
-    const socket = io(process.env.NEXT_PUBLIC_URLSOCKET, options);
+    const socket = io(process.env.NEXT_PUBLIC_URLBACKEND, options);
 
     setSocket(socket)
     socket.on("connection-established", (idRoom) => {

@@ -41,10 +41,10 @@ export default  function RootLayout({
           </header>
 
           <main className="flex flex-col md:flex-row flex-grow overflow-y-auto bg-gray-100 ">
-            <aside className={ `${ismain ? "block" : "hidden"}  md:block flex-1 p-2 overflow-y-auto bg-azul-claro h-full max-h-full`}>
+            <aside className={ `${ismain ? "block" : "hidden"}  lg:block flex-1 p-2 overflow-y-auto bg-azul-claro h-full max-h-full`}>
               <AsideMenu/>
             </aside>
-            <section className={ `${ismain ? "hidden" : "block"}  md:block flex-2 overflow-y-auto p-2 bg-gray-100  h-full center max-h-full`}>
+            <section className={ `${ismain ? "hidden" : "block"}  lg:block flex-2 overflow-y-auto p-2 bg-gray-100  h-full center max-h-full`}>
               {children}
             </section> 
           </main>
